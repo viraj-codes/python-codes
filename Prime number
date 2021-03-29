@@ -1,1 +1,37 @@
-Program for prime number
+#Program for prime number
+
+def chkprime(no):
+	flag = 0
+	for i in range(2,no):
+		if no % i == 0:
+			flag = 1
+			break
+	if flag == 0:
+		return True
+	else:
+		return False
+
+def ListPrime(data):
+	arr = []
+	for i in range(len(data)):
+		ret =chkprime(data[i])
+		if ret == True:
+			arr.append(data[i])
+	print(arr)
+
+def main():
+	arr = []
+	print("Enter size of list")
+	size = int(input())
+
+
+	for i in range(size):
+		arr.append(int(input()))
+
+	print("Entered Data Is : ",arr)
+
+	ret = ListPrime(arr)
+	print("Addition of all prime number in list is  : ",ret)
+
+if __name__ =="__main__":
+	main()
