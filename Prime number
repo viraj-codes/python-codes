@@ -32,6 +32,7 @@ def main():
 
 	ret = ListPrime(arr)
 	print("Addition of all prime number in list is  : ",ret)
+	
 
 if __name__ =="__main__":
 	main()
