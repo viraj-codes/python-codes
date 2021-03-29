@@ -1,0 +1,20 @@
+
+def EvenOdd(value):
+	if value % 2 == 0:
+		return True
+	else:
+		return False
+
+def main():
+
+	Print("Enter Number")
+	val = int(input())
+
+	ret = EvenOdd(val)
+	if ret == True:
+		print("Number Is Even")
+	else:
+		print("Number Is Odd")
+
+if __name__ == "__main__":
+	mian()
